@@ -7,7 +7,7 @@ Kernel Version:5.10
 
 This Firmware Overclocked CPU to 1000Mhz, If You Won't Need it, [Check This Firmware](https://github.com/DestoryG/LeanWRT-MiR3G-510)
 
-Still Looking For 5.4 Kernel ? [Check This](https://github.com/Destroy-God/LeanWRT-MiR3G)
+Since node.js no longer supports mips, resulting in compilation errors, 5.4 will no longer be maintained.
 
 Make Sure Your Router Has [Breed Bootloader Version 1.2](https://breed.hackpascal.net/breed-mt7621-xiaomi-r3g.bin)
 
