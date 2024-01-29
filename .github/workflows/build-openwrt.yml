@@ -35,7 +35,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     steps:
     - name: Checkout
@@ -50,10 +50,18 @@ jobs:
         sudo -E apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
         sudo -E apt-get -qq autoremove --purge
         sudo -E apt-get -qq clean
+        sudo -E apt-get -qq install neofetch screenfetch
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
         sudo chown $USER:$GROUPS /workdir
-
+        
+    - name: Show Hardware Info
+       run:|
+        echo "Neofetch Result:"
+        neofetch
+        echo "Screenfetch Result:"
+        screenfetch
+        
     - name: Clone source code
       working-directory: /workdir
       run: |
@@ -132,6 +140,9 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
+        rm config.buildinfo
+        rm feeds.buildinfo
+        rm version.buildinfo
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
 
