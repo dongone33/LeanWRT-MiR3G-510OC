@@ -18,3 +18,5 @@ sed -i "s/set system.@system\[-1\].hostname='OpenWrt'/set system.@system[-1].hos
 mv files/322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
 rm -rf package/feeds/routing/batman-adv
 mv files/batman-adv package/feeds/routing
+rm feeds/packages/lang/lua-eco/Makefile
+wget https://raw.githubusercontent.com/zhaojh329/lua-eco/openwrt-package/Makefile -O feeds/packages/lang/lua-eco/Makefile
