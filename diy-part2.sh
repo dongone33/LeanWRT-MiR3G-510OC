@@ -16,3 +16,5 @@ sed -i 's/KERNEL_PATCHVER:=5\.4/KERNEL_PATCHVER:=5.10/' target/linux/ramips/Make
 sed -i "s/set system.@system\[-1\].hostname='OpenWrt'/set system.@system[-1].hostname='DGWrt'/" package/base-files/files/bin/config_generate
 #mv 322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
 mv files/322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
+rm -rf package/feeds/routing/batman-adv
+mv files/batman-adv package/feeds/routing
