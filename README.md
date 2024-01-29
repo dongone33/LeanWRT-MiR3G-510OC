@@ -33,7 +33,7 @@ Don't Flash This Firmware, Or Your Device Will BRICKED，Don't Say I Didn't Warn
 - [dev-drprasad/delete-older-releases](https://github.com/dev-drprasad/delete-older-releases)
 - [peter-evans/repository-dispatch](https://github.com/peter-evans/repository-dispatch)
 - [ChatGPT](https://chat.openai.com/)
-
+- [stupidloud/cachewrtbuild](https://github.com/stupidloud/cachewrtbuild)
 ## License
 
 [MIT](https://github.com/P3TERX/Actions-OpenWrt/blob/main/LICENSE) © [**P3TERX**](https://p3terx.com)
