@@ -17,3 +17,4 @@ sed -i "s/set system.@system\[-1\].hostname='OpenWrt'/set system.@system[-1].hos
 #mv 322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
 mv files/322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/
 sudo apt install libfuse-dev
+mv files/Makefile package/system/apk
