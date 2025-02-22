@@ -20,7 +20,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci/
 sed -i '/^PKG_BUILD_PARALLEL:=1$/a PKG_USE_MIPS16:=0' feeds/packages/utils/v2dat/Makefile
 rm -rf feeds/routing/batman-adv
 rm target/linux/ramips/patches-5.10/322-mt7621-fix-cpu-clk-add-clkdev.patch
-rm feeds/kenzo/luci-theme-argone/htdocs/luci-static/argone/img/bg1.jpg
+rm feeds/smpackage/luci-theme-argone/htdocs/luci-static/argone/img/bg1.jpg
 mv files/batman-adv feeds/routing
 mv files/322-mt7621-fix-cpu-clk-add-clkdev.patch target/linux/ramips/patches-5.10/322-mt7621-fix-cpu-clk-add-clkdev.patch
-mv files/bg1.jpg feeds/kenzo/luci-theme-argone/htdocs/luci-static/argone/img/bg1.jpg
+mv files/bg1.jpg feeds/smpackage/luci-theme-argone/htdocs/luci-static/argone/img/bg1.jpg
