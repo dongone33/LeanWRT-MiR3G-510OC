@@ -5,9 +5,7 @@ A Lean's OpenWRT-Fork Firmware For Xiaomi Router 3G V1.
 ## Tips
 Kernel Version:5.10
 
-This Firmware Overclocked CPU to 1000Mhz, If You Won't Need it, [Check This Firmware](https://github.com/DestoryG/LeanWRT-MiR3G-510)
-
-Note: 5.4 Firmware will no longer be maintained.
+This Firmware Overclocked CPU to 1100Mhz, If You Won't Need it, [Check This Firmware](https://github.com/DestoryG/LeanWRT-MiR3G-510)
 
 Make Sure Your Router Has [Breed Bootloader Version 1.2](https://breed.hackpascal.net/breed-mt7621-xiaomi-r3g.bin)
 
