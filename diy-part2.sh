@@ -16,7 +16,7 @@ sed -i 's/LEDE/DGWRT/g' openwrt/package/base-files/files/bin/config_generate
 sed -i 's/KERNEL_PATCHVER:=5\.4/KERNEL_PATCHVER:=5.10/' target/linux/ramips/Makefile
 sed -i 's/wireless.radio${devidx}.country=US/wireless.radio${devidx}.country=AU/g' openwrt/package/kernel/mac80211/files/lib/wifi/mac80211.sh
 git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git packages
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
+sed -i 's/luci-theme-bootstrap/luci-theme-argone/g' feeds/luci/collections/luci/Makefile
 sed -i '/^PKG_BUILD_PARALLEL:=1$/a PKG_USE_MIPS16:=0' feeds/packages/utils/v2dat/Makefile
 rm -rf feeds/routing/batman-adv
 rm openwrt/target/linux/ramips/patches-5.10/322-mt7621-fix-cpu-clk-add-clkdev.patch
